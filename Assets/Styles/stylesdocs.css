@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none
+}
+
+body {
+    display: flex;
+    /*background: #feffec;*/
+    flex-wrap: wrap;
+    background-color: rgba(245, 246, 248, 0.1);
+    padding-top: 75px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    border: 0px solid transparent;
+    position: relative;
+}
+
+h5 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 246, 248);
+    color: rgb(87, 169, 165);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    min-height: fit-content;
+    box-shadow: 0 1px 4px -1px #6e5353;
+}
+
+.header .logo-icon {
+    max-width: 22%;
+    color: rgb(87, 169, 165);
+}
+
+.header .logo-text {
+    font-size: 150%;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
+}
+
+.header .logo-text .text-alt {
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: larger;
+}
+
+.page-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 340px;
+    width: 100%;
+    background-image: url("../Images/GA-IoT.jpg");
+    background-size: cover;
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(87, 169, 165);
+    margin-left: 0;
+    margin-right: 0;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.page-intro {
+    color: #f57842;
+    border: 1px solid transparent;
+}
+
+.main-search-box {
+    width: 400px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #feffec;
+    border: 1px solid transparent;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.form-control {
+    margin-left: -10px;
+    width: 340px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    /*color: rgb(87, 169, 165);
+    display: ;*/
+} 
+.search-input {
+    
+}
+
+.search-btn {
+    width: 7mm;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 7mm;
+    color: rgb(87, 169, 165);
+}
+
+.search-btn:hover {
+    color: #f57842;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    border: 0px solid transparent;
+}
+
+.page-content .row {
+    position: relative;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    flex-direction: row;
+    /*margin: 8% 20% 0; Do not include*/
+    flex-wrap: wrap;
+    border: 0px solid transparent;
+}
+
+.page-content .row .container1 {
+    position: relative;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    border: 2px solid transparent;
+}
+
+/*.page-content .row .container1*/ .col-12 {
+    width: 300px;
+    position: relative;
+    height: 200px;
+    margin: 15px 20px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1.0px 1px 15px -10px #6e5353;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.col-12:hover {
+    box-shadow: 0px 0px 40px -15px #6e5353;
+    background-color: rgba(87, 169, 165, 0.1);
+}
+
+.card {
+    position: relative;
+    border: 1px solid transparent;
+    height: 170px;
+    width: 290px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(10, 7, 7);
+    margin-left: 0;
+    margin-right: 0;
+    height: 170px;
+    width: 290px;
+    border: 1px solid transparent;
+    padding: 0px;
+    /*padding: 10px 40px 0px;
+    box-shadow: 3.0px 8px #6e5353;*/
+}
+
+.card-body .card-title {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    width: 290px;
+    margin-top: 0;
+}
+
+.card-body .card-title .theme-icon-holder {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid rgba(87, 169, 165, 0.1);
+    color: #d55209;*/
+    border: 0px solid #feffec;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(87, 169, 165, 0.1);
+    color: #f57842;
+}
+
+.col-12:hover .card-body .card-title .theme-icon-holder {
+    background-color: #feffec;
+    border: 0px solid #feffec;
+}
+
+.card-body .card-title .card-title-text {
+    /*border: 1px solid black;*/
+    margin-left: 10px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight:bolder;
+    padding-left: 5px;
+}
+
+.card-body .card-text {
+    margin-bottom: 0;
+    border: solid transparent;
+}
